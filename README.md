@@ -28,6 +28,13 @@ Set `SITE_URL` to the public address (`SITE_URL=https://your-domain.com npm star
 slash) so canonical links, the sitemap and the share image point at the real domain. Without it
 they use the request's host.
 
+## Deploy on Vercel
+
+`vercel.json` sends everything that isn't a built file to one Function, `api/server.mjs`,
+which runs the same proxy and SEO handlers as `server/index.mjs`. Import the repo in Vercel
+with the defaults, and set `SITE_URL` to the production address in the project's environment
+variables.
+
 ## Search engines and AI assistants
 
 - **`server/seo.mjs`** serves `/robots.txt`, `/sitemap.xml` and `/llms.txt`, and writes each
