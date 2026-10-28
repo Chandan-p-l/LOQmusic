@@ -35,6 +35,21 @@ which runs the same proxy and SEO handlers as `server/index.mjs`. Import the rep
 with the defaults, and set `SITE_URL` to the production address in the project's environment
 variables.
 
+**Songs won't play from Vercel alone.** YouTube answers requests from cloud IPs, Vercel's
+included, with "Sign in to confirm you're not a bot". Pages, search and the home feed still load,
+but the player gets no streams. Run `npm start` on a machine on another network (a home PC or a
+small VPS) and set `PROXY_ORIGIN` in Vercel to its public address. The Function then passes
+`/px/` through to it, so YouTube sees that machine instead. A free Cloudflare Tunnel gives a home
+PC a public HTTPS address without opening ports:
+
+```bash
+npm run build && npm start                           # LOQmusic on http://localhost:5180
+cloudflared tunnel --url http://localhost:5180       # prints https://<random>.trycloudflare.com
+```
+
+Set `PROXY_ORIGIN` to that address and redeploy. For an address that doesn't change, create a
+named tunnel on your own domain.
+
 ## Search engines and AI assistants
 
 - **`server/seo.mjs`** serves `/robots.txt`, `/sitemap.xml` and `/llms.txt`, and writes each
