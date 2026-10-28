@@ -1,0 +1,54 @@
+{
+  "name": "LOQmusic",
+  "title": "LOQmusic: free music streaming in your browser, no sign-up, no ads",
+  "description": "LOQmusic is a free music streaming web app. Search and play any song, with synced lyrics, AutoMix DJ transitions, a 10-band equalizer, radio and Listen Together. No sign-up, no ads, nothing to install.",
+  "developer": {
+    "name": "Chandan Pal",
+    "github": "https://github.com/Chandan-p-l",
+    "instagram": "https://www.instagram.com/chandan_pal101/",
+    "linkedin": "https://www.linkedin.com/in/chandan-pal-49b664205/",
+    "upi": "chandanpal@ptyes"
+  },
+  "routes": {
+    "/home": {
+      "title": "LOQmusic: free music streaming in your browser, no sign-up, no ads",
+      "description": "LOQmusic is a free music streaming web app. Search and play any song, with synced lyrics, AutoMix DJ transitions, a 10-band equalizer, radio and Listen Together. No sign-up, no ads, nothing to install."
+    },
+    "/discover": {
+      "title": "Discover music by mood and genre · LOQmusic",
+      "description": "Find new music by mood and genre on LOQmusic, a free music streaming web app with no sign-up and no ads."
+    },
+    "/new": {
+      "title": "New music releases · LOQmusic",
+      "description": "The latest albums and singles, free to stream on LOQmusic. No sign-up, no ads."
+    },
+    "/radio": {
+      "title": "Free online radio stations by genre and mood · LOQmusic",
+      "description": "16 free genre and mood radio stations, plus a personal station built from the songs you like. Stream them on LOQmusic with no sign-up."
+    },
+    "/browse-all": {
+      "title": "Browse music · LOQmusic",
+      "description": "Browse genres, moods and charts and play any of them for free on LOQmusic."
+    },
+    "/search": {
+      "title": "Search songs, artists and albums · LOQmusic",
+      "description": "Search any song, artist, album or playlist and play it for free on LOQmusic."
+    },
+    "/together": {
+      "title": "Listen Together: share music in sync with friends · LOQmusic",
+      "description": "Start a Listen Together party on LOQmusic and hear the same song at the same moment as your friends. Free, no account needed."
+    },
+    "/about": {
+      "title": "About LOQmusic: a free music web app and portfolio project by Chandan Pal",
+      "description": "What LOQmusic is, who built it, what it can do and how it works. LOQmusic is a free, non-commercial portfolio project by developer Chandan Pal."
+    },
+    "/support": {
+      "title": "Support the developer · LOQmusic",
+      "description": "LOQmusic is free. If it's useful to you, you can support its developer, Chandan Pal, with a voluntary UPI tip, or get in touch for help."
+    },
+    "/terms": {
+      "title": "Terms, privacy and disclaimer · LOQmusic",
+      "description": "LOQmusic's terms of use, privacy notice and disclaimer. LOQmusic is a non-commercial portfolio project, hosts no music and is not affiliated with YouTube, Google or any record label."
+    }
+  }
+}

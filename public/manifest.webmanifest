@@ -1,0 +1,16 @@
+{
+  "name": "LOQmusic: free music streaming",
+  "short_name": "LOQmusic",
+  "description": "Free music streaming in your browser. Synced lyrics, AutoMix, a 10-band equalizer, radio and Listen Together. No sign-up, no ads.",
+  "start_url": "/home",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b0912",
+  "theme_color": "#0b0912",
+  "categories": ["music", "entertainment"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
